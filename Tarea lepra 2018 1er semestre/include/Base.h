@@ -12,6 +12,7 @@ class Base
         string Mensaje;
         string Clave;
     public:
+        Base();
         Base(string,string);
         virtual ~Base();
         bool Comprobar_error_mensaje(string); //Comprueba si posee minusculas

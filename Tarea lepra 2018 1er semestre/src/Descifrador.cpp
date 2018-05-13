@@ -1,5 +1,9 @@
 #include "Descifrador.h"
 
+Descifrador::Descifrador():Base()
+{
+}
+
 Descifrador::Descifrador(string x,string y):Base(x,y)
 {
 }
@@ -9,7 +13,7 @@ Descifrador::~Descifrador()
     //dtor
 }
 
-void Descifrador::Termino(string x, string y)
+void Descifrador::Comienza(string x, string y)
 {
     //Se comprueba si, el mensaje posee simbolo o minusculas, y/o , si la clave posee simbolos, minusculas o espacios
     if(Comprobar_error_mensaje(x) == true || Comprobar_error_clave(y) == true){
@@ -39,4 +43,5 @@ void Descifrador::Termino(string x, string y)
         }
         SetMensaje(aux); // Se guarda el mensaje descifrado
     }
+    cout << endl;
 }

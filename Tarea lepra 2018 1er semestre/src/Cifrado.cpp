@@ -1,6 +1,9 @@
 #include "Cifrado.h"
 
 
+Cifrado::Cifrado():Base()
+{
+}
 
 Cifrado::Cifrado(string x, string y):Base(x,y)
 {
@@ -12,12 +15,12 @@ Cifrado::~Cifrado()
 }
 
 
-void Cifrado::Comienza(string x, string y)
+bool Cifrado::Comienza(string x, string y)
 {
     //Se comprueba si, el mensaje posee simbolo o minusculas, y/o , si la clave posee simbolos, minusculas o espacios
     if(Comprobar_error_mensaje(x) == true || Comprobar_error_clave(y) == true){
         cout << "E R R O R" << endl;
-        return;
+        return false;
     }
     else{
             // Se repite la clave hasta que el n° de caracteres supere el n° de caracteres del mensaje
@@ -44,6 +47,8 @@ void Cifrado::Comienza(string x, string y)
             }
             SetMensaje(aux); // Guarda el mensaje cifrado
     }
+    cout << endl;
+    return true;
 }
 
 

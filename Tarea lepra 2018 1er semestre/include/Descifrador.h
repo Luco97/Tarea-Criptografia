@@ -7,9 +7,10 @@
 class Descifrador : public Base
 {
     public:
+        Descifrador();
         Descifrador(string,string);
         virtual ~Descifrador();
-        void Termino(string,string);
+        void Comienza(string,string);
 };
 
 #endif // DESCIFRADOR_H

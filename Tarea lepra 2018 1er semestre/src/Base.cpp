@@ -11,6 +11,9 @@ void gotoxy(int x,int y) // Funcion para mover posicionarse en consola
       SetConsoleCursorPosition(hcon,dwPos);
 }
 
+Base::Base()
+{
+}
 
 Base::Base(string x, string y) // Constructor de Base
 {

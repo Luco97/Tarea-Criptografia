@@ -5,9 +5,10 @@
 class Cifrado:public Base
 {
     public:
+        Cifrado();
         Cifrado(string,string);
         virtual ~Cifrado();
-        void Comienza(string,string);
+        bool Comienza(string,string);
 };
 
 #endif // CIFRADO_H
