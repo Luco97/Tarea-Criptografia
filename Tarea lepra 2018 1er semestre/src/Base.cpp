@@ -51,10 +51,10 @@ bool Base::Comprobar_error_clave(string x) // Comprueba si en la clave hay minus
 
 void Base::Procedimiento(char x, char y, char z, int i) // Muestra el procedimiento
 {
-    gotoxy(i*3,4);cout << x;
-    gotoxy(i*3,6);cout << char_to_number(x);
-    gotoxy(i*3,8);cout << y;
-    gotoxy(i*3,10);cout << char_to_number(y);
-    gotoxy(i*3,12);cout << z;
-    gotoxy(i*3,14);cout << char_to_number(z);
+    gotoxy(i*3,2);cout << x;
+    gotoxy(i*3,3);cout << char_to_number(x);
+    gotoxy(i*3,6);cout << y;
+    gotoxy(i*3,7);cout << char_to_number(y);
+    gotoxy(i*3,10);cout << z;
+    gotoxy(i*3,11);cout << char_to_number(z);
 }

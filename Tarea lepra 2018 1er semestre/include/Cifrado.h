@@ -8,7 +8,7 @@ class Cifrado:public Base
         Cifrado();
         Cifrado(string,string);
         virtual ~Cifrado();
-        bool Comienza(string,string);
+        string Comienza(string,string);
 };
 
 #endif // CIFRADO_H

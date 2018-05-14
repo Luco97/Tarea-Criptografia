@@ -10,7 +10,7 @@ class Descifrador : public Base
         Descifrador();
         Descifrador(string,string);
         virtual ~Descifrador();
-        void Comienza(string,string);
+        string Comienza(string,string);
 };
 
 #endif // DESCIFRADOR_H

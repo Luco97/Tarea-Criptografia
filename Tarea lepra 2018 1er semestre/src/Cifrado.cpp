@@ -15,12 +15,12 @@ Cifrado::~Cifrado()
 }
 
 
-bool Cifrado::Comienza(string x, string y)
+string Cifrado::Comienza(string x, string y)
 {
     //Se comprueba si, el mensaje posee simbolo o minusculas, y/o , si la clave posee simbolos, minusculas o espacios
     if(Comprobar_error_mensaje(x) == true || Comprobar_error_clave(y) == true){
         cout << "E R R O R" << endl;
-        return false;
+        return "";
     }
     else{
             // Se repite la clave hasta que el n° de caracteres supere el n° de caracteres del mensaje
@@ -46,9 +46,11 @@ bool Cifrado::Comienza(string x, string y)
                     }
             }
             SetMensaje(aux); // Guarda el mensaje cifrado
+            cout << endl << endl;
+            cout << "Mensaje: " << aux << endl;
+            cout << endl;
+            return aux;
     }
-    cout << endl;
-    return true;
 }
 
 

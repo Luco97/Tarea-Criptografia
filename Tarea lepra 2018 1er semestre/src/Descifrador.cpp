@@ -13,11 +13,12 @@ Descifrador::~Descifrador()
     //dtor
 }
 
-void Descifrador::Comienza(string x, string y)
+string Descifrador::Comienza(string x, string y)
 {
     //Se comprueba si, el mensaje posee simbolo o minusculas, y/o , si la clave posee simbolos, minusculas o espacios
     if(Comprobar_error_mensaje(x) == true || Comprobar_error_clave(y) == true){
         cout << "E R R O R" << endl;
+        return x;
     }
     else{
         // Se repite la clave hasta que el n° de caracteres supere el n° de caracteres del mensaje
@@ -41,7 +42,9 @@ void Descifrador::Comienza(string x, string y)
                         aux += " ";
                 }
         }
-        SetMensaje(aux); // Se guarda el mensaje descifrado
+        cout << endl << endl;
+        cout << "Mensaje: " << aux << endl;
+        cout << endl;
+        return x;
     }
-    cout << endl;
 }
