@@ -71,27 +71,30 @@
 1525031234 source:c:\users\lukii\documents\github\basural\nueva carpeta (2)\src\descifrador.cpp
 	"Descifrador.h"
 
-1525031399 source:c:\users\lukii\documents\github\basural\tarea lepra 2018 1er semestre\main.cpp
+1526340583 source:c:\users\lukii\documents\github\basural\tarea lepra 2018 1er semestre\main.cpp
 	"Descifrador.h"
 	"Cifrado.h"
+	"Base.h"
+	<stdlib.h>
+	<stdio.h>
 
-1525020860 c:\users\lukii\documents\github\basural\tarea lepra 2018 1er semestre\include\descifrador.h
+1526340222 c:\users\lukii\documents\github\basural\tarea lepra 2018 1er semestre\include\descifrador.h
 	<Base.h>
 
-1525039330 c:\users\lukii\documents\github\basural\tarea lepra 2018 1er semestre\include\base.h
+1526339520 c:\users\lukii\documents\github\basural\tarea lepra 2018 1er semestre\include\base.h
 	<windows.h>
 	<iostream>
 	<string>
 
-1525020860 c:\users\lukii\documents\github\basural\tarea lepra 2018 1er semestre\include\cifrado.h
+1526340061 c:\users\lukii\documents\github\basural\tarea lepra 2018 1er semestre\include\cifrado.h
 	"Base.h"
 
-1525219711 source:c:\users\lukii\documents\github\basural\tarea lepra 2018 1er semestre\src\cifrado.cpp
+1526340053 source:c:\users\lukii\documents\github\basural\tarea lepra 2018 1er semestre\src\cifrado.cpp
 	"Cifrado.h"
 
-1525031234 source:c:\users\lukii\documents\github\basural\tarea lepra 2018 1er semestre\src\descifrador.cpp
+1526340625 source:c:\users\lukii\documents\github\basural\tarea lepra 2018 1er semestre\src\descifrador.cpp
 	"Descifrador.h"
 
-1525039742 source:c:\users\lukii\documents\github\basural\tarea lepra 2018 1er semestre\src\base.cpp
+1526338203 source:c:\users\lukii\documents\github\basural\tarea lepra 2018 1er semestre\src\base.cpp
 	"Base.h"
 
