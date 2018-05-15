@@ -42,11 +42,11 @@ bool Base::Comprobar_error_mensaje(string x) // Comprueba si en el mensaje hay m
 bool Base::Comprobar_error_clave(string x) // Comprueba si en la clave hay minusculas, simbolos o espacios
 {
     for(int i = 0; i<x.length() ; i++){
-        if(char_to_number(x[i]) == 26){
+        if(char_to_number(x[i]) == 26){ // Si es minuscula, simbolo o espacio
             return true;
         }
     }
-    for(int j = 1; j<x.length() ; j++){
+    for(int j = 1; j<x.length() ; j++){ // Si posee letras repetidas
         if(x[j - 1] == x[j]){
             return true;
         }
