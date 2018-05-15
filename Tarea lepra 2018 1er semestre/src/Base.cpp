@@ -46,6 +46,11 @@ bool Base::Comprobar_error_clave(string x) // Comprueba si en la clave hay minus
             return true;
         }
     }
+    for(int j = 1; j<x.length() ; j++){
+        if(x[j - 1] == x[j]){
+            return true;
+        }
+    }
     return false;
 }
 
